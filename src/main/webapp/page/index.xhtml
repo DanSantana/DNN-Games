@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	template="/templates/systemModel2.xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+	<!--  
+ * 
+ * @author Dann - Dangelo Santana
+ * @professor Lounis Zaidi
+ * @subject OPJE - v11-Project2005-0902
+ *
+ */-->
+
+	<ui:define name="menu">
+		<ui:include src="/includes/generallMainMenu.xhtml" />
+	</ui:define>
+	<ui:define name="content">
+		
+
+	
+	<h:panelGrid columns="5" id="joisticks" styleClass="container">
+		<h:form style="text-align: center;">
+		<p:panel id = "presentation">
+			<h:graphicImage value="/resources/images/gaemeframeOne.png" alt="presentation" styleClass="imgFch"/>
+		</p:panel>
+		</h:form>
+		<h:form>
+		<p:panel>
+			<h:graphicImage value="/resources/images/gaemeframeOne.png" alt="presentation" styleClass="imgFch"/>
+		</p:panel>
+		</h:form>
+		<h:form>
+		<p:panel id = "presentation3">
+			<h:graphicImage value="/resources/images/gaemeframeOne.png" alt="presentation"  styleClass="imgFch"/>
+		</p:panel>
+		</h:form>	
+			<h:form>
+		<p:panel >
+			<h:graphicImage value="/resources/images/gaemeframeOne.png" alt="presentation"  styleClass="imgFch"/>
+		</p:panel>
+		</h:form>
+		<h:form>		
+		<p:panel >
+			<h:graphicImage value="/resources/images/gaemeframeOne.png" alt="presentation"  styleClass="imgFch"/>
+		</p:panel>
+		</h:form>
+		</h:panelGrid> 
+
+	</ui:define>
+	<ui:define name="footer">
+		<p:panel id="hgfooter">
+			<ui:include src="/includes/footer.xhtml" />
+		</p:panel>
+
+	</ui:define>
+</ui:composition>
+

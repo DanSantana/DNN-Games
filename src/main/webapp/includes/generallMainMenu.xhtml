@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+	<!--  
+ * 
+ * @author Dann - Dangelo Santana
+ * @professor Lounis Zaidi
+ * @subject OPJE - v11-Project2005-0902
+ *
+ */-->
+
+	<h:form>
+		<!-- MENU -->
+		<p:menubar>
+			<p:submenu label="Game">
+				<p:menuitem value="HangMan" url="/page/hangman.xhtml"  />
+				<p:menuitem value="Fly Block" url="/page/FlyBlock/flyblock-in.html"  />				
+				<p:menuitem value="Asteroid" url="/page/asteroid/galaxy.html"/>
+				<p:menuitem value="Super Race" url="/page/javascript-racer-master/v4.final.html"/>
+				<p:menuitem value="Tetris" url="/page//javascript-tetris-master/tetris.html"/>				
+		
+			</p:submenu>			
+
+			<p:submenu label="Help">
+				<p:menuitem value="About Us" onclick="PF('dgAboutus').show();"/>				
+			</p:submenu>
+		</p:menubar>
+		
+		<p:panel id="logoPanelindex">
+			<h:graphicImage value="/resources/images/dnn games.png" alt="logoIndex" />
+		</p:panel>
+
+		<!--  about us -->
+		<p:dialog widgetVar="dgAboutus" id="abouttxtind" closable="true"
+			draggable="false" resizable="false" width="750px" height="750px"
+			header="About DNN Game!!" closeOnEscape="true">	
+			<h1> 635-048018 CDI college Last Project integration </h1>
+			<p>The present project aims to demonstrate the skills and knowledge acquired until the 
+			present moment in the CDI College, programmer analyst - Internet solutions developer - LEA.9c, especially about Oriented Object Java 
+As worker of ACME Children’s games a development, all developments, image and links related in this jobs are used only in order to provide learning and studies intentions.
+<p>DONT COPY - Or waste your time with comments</p>
+
+			</p>
+					
+			<h2>			
+				<p:outputLabel>LIFE IS GOOD +++++ LIFE IS GOOD  +++++   LIFE IS GOOD  +++++   LIFE IS GOOD!!  </p:outputLabel>
+			</h2>
+
+		</p:dialog>
+
+
+		
+	</h:form>
+</ui:composition>
